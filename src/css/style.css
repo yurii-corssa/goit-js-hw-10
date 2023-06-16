@@ -3,8 +3,13 @@ body {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  --ss-primary-color: #648588;
+  --ss-bg-color: #f2f2f2;
+  --ss-primary-color: #8aa6bf;
+  --ss-font-color: #0d0d0d;
   --ss-border-radius: 20px;
+  --ss-spacing-s: 10px;
+
+  background-color: var(--ss-bg-color);
 }
 
 .select-container {
@@ -12,14 +17,15 @@ body {
 }
 
 .breed-select {
-  padding: 10px 15px;
-  margin-bottom: 10px;
+  /* padding: 10px 15px; */
+  /* margin-bottom: 10px; */
 }
 
 .cat-info {
   display: flex;
   gap: 30px;
   position: relative;
+  padding: 20px 10px;
   opacity: 1;
   transition: opacity 500ms ease;
 }
@@ -30,16 +36,29 @@ body {
 }
 
 .desc-wrapper {
-  padding-right: 30px;
+  padding: 10px 20px;
 }
 
 .breed-img {
+  border-radius: var(--ss-border-radius);
   opacity: 1;
   transition: opacity 500ms ease;
 }
 
 .breed-img.is-hidden {
   opacity: 0;
+}
+
+.breed-name {
+  color: var(--ss-primary-color);
+}
+
+.breed-description {
+  color: var(--ss-font-color);
+}
+
+.breed-temperament {
+  color: var(--ss-font-color);
 }
 
 .breed-temperament > span {

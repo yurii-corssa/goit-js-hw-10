@@ -9,8 +9,8 @@ const KEY =
 
 const notiflixLoadSettings = {
   backgroundColor: 'transparent',
-  svgColor: '#648588',
-  messageColor: '#000',
+  svgColor: '#8aa6bf',
+  messageColor: '#0d0d0d',
   fontFamily: 'Roboto',
 };
 
