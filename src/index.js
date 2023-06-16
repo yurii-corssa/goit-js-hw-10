@@ -9,7 +9,7 @@ export const refs = {
   catInfo: document.querySelector('.cat-info'),
 };
 
-fetchBreeds(createSelectMarkup);
+fetchBreeds();
 
 refs.select.addEventListener('change', e => fetchCatByBreed(e.target.value));
 

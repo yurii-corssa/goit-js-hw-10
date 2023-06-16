@@ -17,8 +17,14 @@ body {
 }
 
 .breed-select {
-  /* padding: 10px 15px; */
-  /* margin-bottom: 10px; */
+  /* position: relative; */
+  opacity: 1;
+  /* transition: opacity 500ms ease; */
+}
+
+.breed-select.is-hidden {
+  /* position: absolute; */
+  opacity: 0;
 }
 
 .cat-info {

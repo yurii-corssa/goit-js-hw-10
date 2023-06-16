@@ -1,4 +1,4 @@
-import { createCatInfoMarkup } from './markup';
+import { createSelectMarkup, createCatInfoMarkup } from './markup';
 import { refs, addClassIsHidden, removeClassIsHidden } from '../index.js';
 import { Loading } from 'notiflix/build/notiflix-loading-aio';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
@@ -14,10 +14,16 @@ const notiflixLoadSettings = {
   fontFamily: 'Roboto',
 };
 
-export function fetchBreeds(callback) {
+export function fetchBreeds() {
+  Loading.dots('Loading data, please wait...', notiflixLoadSettings);
+
   return fetch(`${API}breeds`)
     .then(response => response.json())
-    .then(callback)
+    .then(data => {
+      createSelectMarkup(data);
+      refs.select.classList.remove('is-hidden');
+      Loading.remove();
+    })
     .catch(() =>
       Notify.failure('Oops!, Something went wrong! Try reloading the page!')
     );
