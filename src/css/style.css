@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
   max-width: 1200px;
   margin-left: auto;
@@ -31,7 +31,6 @@ body {
 
 .desc-wrapper {
   padding-right: 30px;
-  /* width: 480px; */
 }
 
 .breed-img {
@@ -45,34 +44,4 @@ body {
 
 .breed-temperament > span {
   font-weight: 700;
-}
-
-.ss-main {
-  /* width: 300px; */
-}
-
-/* 
-
-.ss-main:focus {
-  box-shadow: none;
-}
-.ss-main:hover {
-  box-shadow: 0 0 5px red;
-}
-
-.ss-content .ss-search input {
-  border-radius: 20px;
-  box-shadow: none;
-  transition: box-shadow 200ms ease;
-}
-
-.ss-content .ss-search input:hover,
-.ss-content .ss-search input:focus {
-  box-shadow: 0 0 5px red;
 } */
-
-/* .ss-main.ss-open-below {
-  border-radius: 20px;
-} */
-
-/* ---------------------------------- */
